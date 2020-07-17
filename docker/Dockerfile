@@ -6,7 +6,7 @@ RUN yum install gcc72 gcc72-c++ git subversion make libX11-devel libXi-devel \
     libXcursor-devel libXrandr-devel libXinerama-devel libstdc++-static \
     libtiff-devel libpng-devel libjpeg-devel openjpeg openjpeg-devel \
     freetype-devel wget libXmu-devel libXi-devel libGL-devel bzip2 sudo libffi \
-    libffi-devel freeglut-devel fftw-devel libxml2-devel -y
+    libffi-devel freeglut-devel fftw-devel libxml2-devel pcre-devel -y
 
 RUN wget https://cmake.org/files/v3.10/cmake-3.10.0.tar.gz && \
     tar -xvzf cmake-3.10.0.tar.gz && \
