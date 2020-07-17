@@ -48,16 +48,32 @@ RUN mkdir ~/bpy_lambda && \
     cp -R ~/blender-git/build_linux_bpy/bin/bpy.so . && \
     cp -L /opt/lib/openexr-2.4.0/lib64/libHalf.so . && \
     cp -L /opt/lib/openexr-2.4.0/lib64/libIex.so . && \
-    cp -L /opt/lib/openexr-2.4.0/lib64/libIlmImf.so . && \
     cp -L /opt/lib/openexr-2.4.0/lib64/libIlmThread.so . && \
     cp -L /opt/lib/openexr-2.4.0/lib64/libImath.so . && \
     cp -L /opt/lib/openexr-2.4.0/lib64/libIexMath-2_4.so.24 . && \
+    cp -L /opt/lib/openexr-2.4.0/lib64/libIlmImf-2_4.so.24 . && \
     cp -L /opt/lib/oiio-1.8.13/lib64/libOpenImageIO.so . && \
     cp -L /opt/lib/osd-3.4.0_RC2/lib/libosdGPU.so.3.4.0 . && \
     cp -L /opt/lib/osd-3.4.0_RC2/lib/libosdCPU.so.3.4.0 . && \
     cp -L /opt/lib/osl-1.10.9/lib64/liboslcomp.so.1.10 . && \
     cp -L /opt/lib/osl-1.10.9/lib64/liboslexec.so.1.10 . && \
     cp -L /opt/lib/osl-1.10.9/lib64/liboslquery.so.1.10 . && \
+    cp -L /lib64/libutil.so.1 . && \
+    cp -L /usr/lib64/libXau.so.6 . && \
+    cp -L /usr/lib64/libxcb.so.1 . && \
+    cp -L /usr/lib64/libX11.so.6 . && \
+    cp -L /usr/lib64/libXfixes.so.3 . && \
+    cp -L /usr/lib64/libXrender.so.1 . && \
+    cp -L /usr/lib64/libXext.so.6 . && \
+    cp -L /usr/lib64/libXxf86vm.so.1 . && \
+    cp -L /usr/lib64/libfreetype.so.6 . && \
+    cp -L /usr/lib64/libjpeg.so.62 . && \
+    cp -L /usr/lib64/libjbig.so.2.0 . && \
+    cp -L /usr/lib64/libtiff.so.5 . && \
+    cp -L /usr/lib64/libpng12.so.0 . && \
+    cp -L /usr/lib64/libGLdispatch.so.0 . && \
+    cp -L /usr/lib64/libGLX.so.0 . && \
+    cp -L /usr/lib64/libGL.so.1 . && \
     cp -L /usr/lib64/libfftw3.so.3 . && \
     cp -L /usr/lib64/libopenjpeg.so.2 . && \
     cp -L /usr/lib64/libGLEW.so.2.2 . && \
