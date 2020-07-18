@@ -1,0 +1,13 @@
+diff --git a/build_files/build_environment/install_deps.sh b/build_files/build_environment/install_deps.sh
+index 6a247e81148..15743361e0e 100755
+--- a/build_files/build_environment/install_deps.sh
++++ b/build_files/build_environment/install_deps.sh
+@@ -2743,7 +2743,7 @@ compile_OpenCOLLADA() {
+ #    cmake_d="$cmake_d -D USE_STATIC=OFF"
+     cmake_d="$cmake_d -D USE_STATIC=ON"
+ 
+-    cmake $cmake_d ../
++    cmake $cmake_d -D CMAKE_CXX_FLAGS="-fPIC" -DCMAKE_C_FLAGS="-fPIC" ../
+ 
+     make -j$THREADS && make install
+     make clean

@@ -30,6 +30,11 @@ RUN mkdir ~/blender-git && \
     git submodule foreach git checkout master && \
     git submodule foreach git pull --rebase origin master
 
+COPY fix-open-collada-build.patch ~/
+
+RUN cd ~/blender-git && \
+    git apply ~/fix-open-collada-build.patch
+
 RUN cd ~/blender-git && \
     ./blender/build_files/build_environment/install_deps.sh \
     --no-sudo \
