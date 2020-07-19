@@ -5,6 +5,7 @@ lib_dir = os.path.dirname(os.path.realpath(__file__))
 
 LIBRARIES = [
     'libutil.so.1',
+    'libpcre.so.0',
     'libXau.so.6',
     'libxcb.so.1',
     'libX11.so.6',
@@ -40,6 +41,7 @@ LIBRARIES = [
     'libtiff.so.5',
     'libfreetype.so.6',
     'libOpenImageIO.so',
+    'libxml2.so.2',
     'liboslcomp.so.1.10',
     'liboslexec.so.1.10',
     'liboslquery.so.1.10',

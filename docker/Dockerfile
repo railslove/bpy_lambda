@@ -65,6 +65,8 @@ RUN mkdir ~/bpy_lambda && \
     cp -L /opt/lib/osl-1.10.9/lib64/liboslexec.so.1.10 . && \
     cp -L /opt/lib/osl-1.10.9/lib64/liboslquery.so.1.10 . && \
     cp -L /lib64/libutil.so.1 . && \
+    cp -L /lib64/libpcre.so.0 . && \
+    cp -L /usr/lib64/libxml2.so.2 . && \
     cp -L /usr/lib64/libXau.so.6 . && \
     cp -L /usr/lib64/libxcb.so.1 . && \
     cp -L /usr/lib64/libX11.so.6 . && \
