@@ -32,7 +32,7 @@ RUN mkdir ~/blender-git && \
 
 COPY groupsort.py /
 
-RUN mv /groupsort.py ~/blender-git/blender/release/scripts/addons/io_import_dxf/dxfimport/groupsort.py
+RUN mv -f /groupsort.py ~/blender-git/blender/release/scripts/addons/io_import_dxf/dxfimport/groupsort.py
 
 RUN cd ~/blender-git && \
     ./blender/build_files/build_environment/install_deps.sh \
