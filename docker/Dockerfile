@@ -30,6 +30,10 @@ RUN mkdir ~/blender-git && \
     git submodule foreach git checkout master && \
     git submodule foreach git pull --rebase origin master
 
+COPY groupsort.py /
+
+RUN mv /groupsort.py ~/blender-git/blender/release/scripts/addons/io_import_dxf/dxfimport/groupsort.py
+
 RUN cd ~/blender-git && \
     ./blender/build_files/build_environment/install_deps.sh \
     --no-sudo \
